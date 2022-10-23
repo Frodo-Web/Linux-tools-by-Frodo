@@ -24,7 +24,8 @@ do
     $string)
         ## Do something here
         echo "$file"
-	mpg123 -o pulse -@ "$file"
+##	mpg123 -o pulse -@ "$file"
+        mpv --ao=pulse "$file"
         ## Uncomment this line if you don't want the menu to
         ## be shown again
         #break;
